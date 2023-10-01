@@ -1,4 +1,0 @@
-#Thu Sep 21 16:54:57 IST 2023
-base.0=/Users/mannatjaiswal/Desktop/currency_converter/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

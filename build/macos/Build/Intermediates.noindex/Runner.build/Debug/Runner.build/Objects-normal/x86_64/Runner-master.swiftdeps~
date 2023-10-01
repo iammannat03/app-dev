@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
-options: "fe3acb6823809fb8e58b428435cbe92058d24312c75a6d03c9fa626d72ab0c62"
-build_start_time: [1694927874, 939184000]
-build_end_time: [1694927875, 70409000]
-inputs:
-  "/Users/mannatjaiswal/Desktop/currency_converter/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1694927804, 319482691]
-  "/Users/mannatjaiswal/Desktop/currency_converter/macos/Runner/AppDelegate.swift": !private [1694634479, 0]
-  "/Users/mannatjaiswal/Desktop/currency_converter/macos/Runner/MainFlutterWindow.swift": !private [1694634479, 0]
