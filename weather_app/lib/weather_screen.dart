@@ -17,6 +17,7 @@ class WeatherScreen extends StatefulWidget {
 class _WeatherScreenState extends State<WeatherScreen> {
   late Future<Map<String, dynamic>> weather;
 
+// function to get current weather using API
   Future<Map<String, dynamic>> getCurrentWeather() async {
     try {
       String cityName = 'London';
@@ -38,7 +39,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     weather = getCurrentWeather();
   }

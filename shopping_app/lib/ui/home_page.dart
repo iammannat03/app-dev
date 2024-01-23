@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
         selectedFontSize: 0,
         unselectedFontSize: 0,
         onTap: (value) {
+          // here value is the index of the icon clicked in the navigation bar
           setState(() {
             currentPage = value;
           });
