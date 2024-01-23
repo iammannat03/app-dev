@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/global_variables.dart';
-import 'package:shopping_app/product_card.dart';
-import 'package:shopping_app/product_details_page.dart';
+import 'package:shopping_app/components/product_card.dart';
+import 'package:shopping_app/data/global_variables.dart';
+import 'package:shopping_app/ui/product_details_page.dart';
 
 class ProductsList extends StatefulWidget {
-  const ProductsList({
-    super.key,
-  });
+  const ProductsList({super.key});
 
   @override
   State<ProductsList> createState() => _ProductsListState();
@@ -22,6 +20,7 @@ class _ProductsListState extends State<ProductsList> {
     'Bata',
     'Metro',
   ];
+
   @override
   void initState() {
     super.initState();
@@ -30,6 +29,7 @@ class _ProductsListState extends State<ProductsList> {
 
   @override
   Widget build(BuildContext context) {
+    // variable to stor border info
     const border = OutlineInputBorder(
       borderSide: BorderSide(
         color: Color.fromRGBO(225, 225, 225, 1),
@@ -66,6 +66,8 @@ class _ProductsListState extends State<ProductsList> {
           ),
           SizedBox(
             height: 120,
+
+            // listview builder for filter options (Those yellow chips that dont work haha)
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: filters.length,
@@ -105,6 +107,14 @@ class _ProductsListState extends State<ProductsList> {
               },
             ),
           ),
+
+          // the real deal
+          /**
+           * yaha 2 chiz seekhna hai:
+           * 1) MaterialPageRoute()
+           * 2) ProductCard ke andar ka chiz [basically sirf MaterialPageRoute hi] [done]
+           * 
+           */
           Expanded(
             child: ListView.builder(
               itemCount: products.length,

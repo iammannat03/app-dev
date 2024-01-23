@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
+  // here we declare all the required parameters for the ProductCard constructor
   final String title;
   final double price;
   final String image;
@@ -27,6 +28,11 @@ class ProductCard extends StatelessWidget {
         children: [
           Text(
             title,
+            /**
+             * yaha pe ye sab learn karna hai:
+             * 1) .of(context) ka use  [done]
+             * 
+             */
             style: Theme.of(context).textTheme.titleMedium,
           ),
           const SizedBox(
@@ -44,6 +50,10 @@ class ProductCard extends StatelessWidget {
           ),
           Center(
             child: Image(
+              /**
+               * remember that all the images that are to be used in the app is to be stored in the assets folder.
+               * add the url of the image in the AssetImage() like below inside the Image widget
+               */
               image: AssetImage(image),
               height: 175,
             ),

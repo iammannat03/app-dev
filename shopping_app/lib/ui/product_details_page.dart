@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shopping_app/cart_provider.dart';
+import 'package:shopping_app/providers/cart_provider.dart';
 
 class ProductDetailsPage extends StatefulWidget {
   final Map<String, Object> product;
+
+  /// map is {
+  ///    key1:"",
+  ///    key2:Object,
+  /// }
+
   const ProductDetailsPage({
     super.key,
     required this.product,
@@ -15,11 +21,15 @@ class ProductDetailsPage extends StatefulWidget {
 
 class _ProductDetailsPageState extends State<ProductDetailsPage> {
   int selectedSize = 0;
+
   @override
   void initState() {
     super.initState();
   }
 
+  /// What to learn:
+  /// 1) Provider
+  /// 2) Snackbar
   void onTap() {
     if (selectedSize != 0) {
       Provider.of<CartProvider>(context, listen: false).addProduct(
